@@ -1,0 +1,7 @@
+============================ Ubuntu ============================================
+
+-- Protect a Pemp file
+chmod 600 /home/waliulislam/Downloads/'Waliul Test Server Key-(AWS Ubuntu Virtual Machine).pem'
+
+-- For Login AWS EC2 instance
+ssh -i /home/waliulislam/Downloads/'Waliul Test Server Key-(AWS Ubuntu Virtual Machine).pem' ubuntu@PublicIPv4
