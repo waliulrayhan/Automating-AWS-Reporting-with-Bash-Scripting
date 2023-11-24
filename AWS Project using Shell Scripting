@@ -1,0 +1,18 @@
+#!/bin/bash
+
+####################################################
+# Athor: Md. Waliul Islam Rayhan
+# Date: 25 Nov 2023
+# Version: v1
+# This script will report the AWS resource usage
+####################################################
+
+
+# AWS EC2
+# AWS S3
+
+echo "List of S3 Bucket"
+aws s3 ls
+
+echo "List of Ec2 Instance"
+aws ec2 describe-instances
