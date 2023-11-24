@@ -7,12 +7,20 @@
 # This script will report the AWS resource usage
 ####################################################
 
+# jq = JSON processor
+
+# This is used for Debug
+#set -x
 
 # AWS EC2
 # AWS S3
 
-echo "List of S3 Bucket"
+echo -e "List of S3 Bucket"
 aws s3 ls
+echo -e "\n"
 
-echo "List of Ec2 Instance"
-aws ec2 describe-instances
+echo -e "List of Ec2 Instance"
+#aws ec2 describe-instances
+
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
+echo -e "\n"
