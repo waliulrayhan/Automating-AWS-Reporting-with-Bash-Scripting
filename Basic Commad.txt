@@ -5,3 +5,7 @@ chmod 600 /home/waliulislam/Downloads/'Waliul Test Server Key-(AWS Ubuntu Virtua
 
 -- For Login AWS EC2 instance
 ssh -i /home/waliulislam/Downloads/'Waliul Test Server Key-(AWS Ubuntu Virtual Machine).pem' ubuntu@PublicIPv4
+
+
+-- Create and Write File at a time
+vim filename
