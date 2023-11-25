@@ -4,7 +4,7 @@ sudo apt install ssmtp
 -- change into this file
 sudo /etc/ssmtp/ssmtp.conf
 
--- replace this code
+-- Replace this code
 UseSTARTTLS=YES
 FromLineOverride=YES
 root=admin@example.com
@@ -13,7 +13,7 @@ AuthUser=username@gmail.com
 AuthPass=password
 
 -- Sample Text Message
-Subject: Sending email using sendmail
+Subject: Sending email using Sendmail
 Testing email body
 
 -- Fire this mail
