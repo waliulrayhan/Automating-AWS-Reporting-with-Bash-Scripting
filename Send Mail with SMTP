@@ -1,0 +1,20 @@
+-- SSMTP Install
+sudo apt install ssmtp
+
+-- change into this file
+sudo /etc/ssmtp/ssmtp.conf
+
+-- replace this code
+UseSTARTTLS=YES
+FromLineOverride=YES
+root=admin@example.com
+mailhub=smtp.gmail.com:587
+AuthUser=username@gmail.com
+AuthPass=password
+
+-- Sample Text Message
+Subject: Sending email using sendmail
+Testing email body
+
+-- Fire this mail
+sendmail username@gmail.com  < email.txt
