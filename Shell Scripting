@@ -15,12 +15,20 @@
 # AWS EC2
 # AWS S3
 
-echo -e "List of S3 Bucket"
-aws s3 ls
-echo -e "\n"
+Subject: Report AWS usage
 
-echo -e "List of Ec2 Instance"
-#aws ec2 describe-instances
+# File to store the script output
+output_file="/path/to/output.txt"
 
-aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
-echo -e "\n"
+# Run the AWS commands and store the output in a file
+echo -e "List of S3 Bucket" > "$output_file"
+aws s3 ls >> "$output_file"
+echo -e "\n" >> "$output_file"
+
+echo -e "List of EC2 Instance IDs" >> "$output_file"
+aws ec2 describe-instances | jq -r '.Reservations[].Instances[].InstanceId' >> "$output_file"
+echo -e "\n" >> "$output_file"
+
+
+# Send the email using the mail command
+sendmail username@gmail.com  < "$output_file"
