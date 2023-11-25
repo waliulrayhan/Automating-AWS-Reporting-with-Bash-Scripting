@@ -1,10 +1,12 @@
 ============================ Ubuntu ============================================
 
+-- You will get Pemp file from your AWS Account. From there download it to your local device
+
 -- Protect a Pemp file
-chmod 600 /home/waliulislam/Downloads/'Waliul Test Server Key-(AWS Ubuntu Virtual Machine).pem'
+chmod 600 /home/machnename/Downloads/'your-pemp-file.pem'
 
 -- For Login AWS EC2 instance
-ssh -i /home/waliulislam/Downloads/'Waliul Test Server Key-(AWS Ubuntu Virtual Machine).pem' ubuntu@PublicIPv4
+ssh -i /home/machnename/Downloads/'your-pemp-file.pem' ubuntu@Your-AWS-EC2-PublicIPv4
 
 
 -- Create and Write File at a time
