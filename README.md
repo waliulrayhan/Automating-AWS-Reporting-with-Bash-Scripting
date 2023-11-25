@@ -1,2 +1,1 @@
-# DevOps
-This is just a repository for practice DevOps
+#Automating AWS Reporting with Bash Scripting: A Step Towards Efficiency!
