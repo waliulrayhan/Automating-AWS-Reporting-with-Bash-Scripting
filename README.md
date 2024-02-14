@@ -33,10 +33,12 @@ Congratulations, after successfully completing the above steps you have automate
 
 <h2>Usage</h2>
     <ol>
-        <li>Clone the repository: <code>git clone &lt;repository_url&gt;</code></li>
-        <li>Navigate to the cloned directory: <code>cd Automating-AWS-Reporting-with-Bash-Scripting</code></li>
-        <li>Make the scripts executable: <code>chmod +x *.sh</code></li>
-        <li>Run the desired script: <code>./script_name.sh</code></li>
+        <li>Very First login into AWS virtual machine from Ubuntu. <a href="https://github.com/waliulrayhan/Automating-AWS-Reporting-with-Bash-Scripting/blob/main/SignIn%20AWS%20EC2%20From%20ubuntu">Try this</a></li>
+        <li>Configure your favorite text editor. I prefer <a href="https://github.com/waliulrayhan/Automating-AWS-Reporting-with-Bash-Scripting/blob/main/VIM-Configuration">VIM</a></li>
+        <li>Configure Your <a href="https://github.com/waliulrayhan/Automating-AWS-Reporting-with-Bash-Scripting/blob/main/AWS%20Configure">AWS Account</a></li>
+        <li>Write the Shell Script <a href="https://github.com/waliulrayhan/Automating-AWS-Reporting-with-Bash-Scripting/blob/main/Shell%20Scripting">Code</a></li>
+        <li>Follow the <a href="https://github.com/waliulrayhan/Automating-AWS-Reporting-with-Bash-Scripting/blob/main/Send%20Mail%20with%20SMTP">Steps</a> for sending mail using SMTP</li>
+        <li>Finally, Run <a href="https://github.com/waliulrayhan/Automating-AWS-Reporting-with-Bash-Scripting/blob/main/Cron%20Job">cronjob</a> to automate the Shell Script for your day-to-day use</li>
     </ol>
 
 <h2>Configuration</h2>
